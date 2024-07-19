@@ -9,6 +9,7 @@
     <title>Experience Showcase</title>
     <style>
         body {
+            ///background-color: #2a2a4f;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -50,12 +51,15 @@
             margin-left: 0.1em;
         }
 .big .number {
-    font-size: 20em;
-.big .number {
-    font-size: 20em;
+        color: transparent; /* Hide text color */
+
+       font-size: 20em;
     text-align: left; /* Align number to the right */
     white-space: nowrap; /* Prevent line breaks */
-}
+                background: linear-gradient(to right, #2a2a4f 20%, #42427a);
+                    -webkit-background-clip: text; /* Clip text to background */
+    -webkit-text-fill-color: transparent; /* Make text transparent */
+
 
 }
         .big h2 {
