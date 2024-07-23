@@ -9,7 +9,7 @@
     <title>Experience Showcase</title>
     <style>
         body {
-           /// background-color: #21213b;
+            background-color: #21213b;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -19,18 +19,19 @@
         }
         .container {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 20px;
-            width: 80%;
+            width: 100%;
             max-width: 1200px;
+            align-items: start; /* Align items to the start (top) */
             text-align: center;
         }
         .container > div {
             background: transparent;
             padding: 20px;
         }
-        .container > div:last-child {
-            grid-column: span 2;
+        .feedback {
+            grid-column: span 4;
         }
         h2 {
             font-size: 1.7em;
@@ -39,34 +40,32 @@
         }
         .number {
             font-family: 'Space Grotesk', sans-serif;
-            font-size: 15em;
+            font-size: 10em;
             font-weight: bold;
             color: #42427a;
             display: inline-flex;
             align-items: baseline;
-           
+            justify-content: center;
         }
         .number .plus {
-            font-size: 0.4em;
+            font-size: 0.3em;
             margin-left: 0.1em;
         }
-.big .number {
-        color: transparent; /* Hide text color */
-
-       font-size: 20em;
-    text-align: left; /* Align number to the right */
-    white-space: nowrap; /* Prevent line breaks */
-                background: linear-gradient(to right, #21213b 10%, #42427a);
-                    -webkit-background-clip: text; /* Clip text to background */
-    -webkit-text-fill-color: transparent; /* Make text transparent */
-
-
-}
+        .big .number {
+            margin-top:-50px;
+            color: transparent; /* Hide text color */
+            font-size: 20em;
+            text-align: left; /* Align number to the right */
+            white-space: nowrap; /* Prevent line breaks */
+            background: linear-gradient(to right, #42427a 10%, #42427a);
+            -webkit-background-clip: text; /* Clip text to background */
+            -webkit-text-fill-color: transparent; /* Make text transparent */
+        }
         .big h2 {
             font-size: 2em;
         }
         .feedback-text {
-             font-family: 'Space Grotesk', sans-serif;
+            font-family: 'Space Grotesk', sans-serif;
             font-size: 1.1em;
             color: #535399;
             margin-top: 10px;
@@ -92,10 +91,10 @@
         <div class="number" id="training">0<span class="plus">+</span></div>
         <h2>Training Courses</h2>
     </div>
-    <div class="big">
+    <div class="feedback big">
         <div class="number" id="feedbacks">0</div>
         <h2>Feedbacks, Criticism and Revisions</h2>
-<p class="feedback-text">Feedback is an invaluable part of the creative process, constantly flowing and evolving. It's a collection of countless insights, perspectives, and suggestions that drive continuous improvement. Embracing feedback not only refines my skills but also enhances my ability to deliver impactful solutions. It's through this iterative cycle of listening, learning, and adapting that I continually push the boundaries of creativity and innovation.</p>
+        <p class="feedback-text">Feedback is an invaluable part of the creative process, constantly flowing and evolving. It's a collection of countless insights, perspectives, and suggestions that drive continuous improvement. Embracing feedback not only refines my skills but also enhances my ability to deliver impactful solutions. It's through this iterative cycle of listening, learning, and adapting that I continually push the boundaries of creativity and innovation.</p>
     </div>
 </div>
 
